@@ -3,6 +3,8 @@ import {
   Vuetify,
   VApp,
   VNavigationDrawer,
+  VProgressCircular,
+  VBottomNav,
   VFooter,
   VList,
   VBtn,
@@ -11,12 +13,14 @@ import {
   VToolbar,
   transitions
 } from 'vuetify'
-import 'vuetify/src/stylus/app.styl'
+import 'vuetify/dist/vuetify.min.css'
 
 Vue.use(Vuetify, {
   components: {
     VApp,
     VNavigationDrawer,
+    VProgressCircular,
+    VBottomNav,
     VFooter,
     VList,
     VBtn,

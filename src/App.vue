@@ -29,7 +29,7 @@
       :clipped-left="clipped"
     >
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
+      <!-- <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"></v-icon>
       </v-btn>
       <v-btn icon @click.stop="clipped = !clipped">
@@ -37,17 +37,51 @@
       </v-btn>
       <v-btn icon @click.stop="fixed = !fixed">
         <v-icon>remove</v-icon>
-      </v-btn>
+      </v-btn> -->
       <v-toolbar-title v-text="title"></v-toolbar-title>
-      <v-spacer></v-spacer>
+      <!-- <v-spacer></v-spacer>
       <v-btn icon @click.stop="rightDrawer = !rightDrawer">
         <v-icon>menu</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-toolbar>
     <v-content>
       <router-view/>
     </v-content>
-    <v-navigation-drawer
+    <v-bottom-nav
+      :active.sync="bottomNav"
+      :value="true"
+      absolute
+      color="transparent"
+      :fixed="true"
+    >
+      <v-btn
+        color="teal"
+        flat
+        value="recent"
+      >
+        <span>歷史紀錄</span>
+        <v-icon>fas fa-history</v-icon>
+      </v-btn>
+
+      <v-btn
+        color="teal"
+        flat
+        value="favorites"
+      >
+        <span>開始健身</span>
+        <v-icon>fas fa-dumbbell</v-icon>
+      </v-btn>
+
+      <v-btn
+        color="teal"
+        flat
+        value="nearby"
+      >
+        <span>個人資料</span>
+        <v-icon>fas fa-user</v-icon>
+      </v-btn>
+    </v-bottom-nav>
+    <!-- <v-navigation-drawer
       temporary
       :right="right"
       v-model="rightDrawer"
@@ -65,7 +99,7 @@
     </v-navigation-drawer>
     <v-footer :fixed="fixed" app>
       <span>&copy; 2017</span>
-    </v-footer>
+    </v-footer> -->
   </v-app>
 </template>
 
@@ -85,8 +119,9 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: '健身數據',
+      bottomNav: 0,
     }
-  }
+  },
 }
 </script>
