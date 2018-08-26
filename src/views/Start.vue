@@ -2,35 +2,47 @@
     <v-container grid-list-md text-xs-center>
         <v-layout row wrap>
             <v-flex xs12>
-                <h1>深蹲 - 爆發力</h1>
-                <h2>負重<span style="font-size: 3rem;">{{ load }}</span>公斤</h2>
-            </v-flex>
-            <v-flex xs6>
-                <span class="g-word">組數</span>
-                <v-progress-circular
-                :rotate="180"
-                :size="100"
-                :width="15"
-                :value="cCurrentSet"
-                color="teal"
-                >
-                {{ currentSet }}/{{ totalSet }}
-                </v-progress-circular>
-            </v-flex>
-            <v-flex xs6>
-                <span class="g-word">次數</span>
-                <v-progress-circular
-                :rotate="180"
-                :size="150"
-                :width="15"
-                :value="cCurrentRep"
-                color="primary"
-                >
-                {{ currentRep }}/{{ totalRep }}
-                </v-progress-circular>
+                <v-card>
+                        <v-container grid-list-md text-xs-center>
+        <v-layout row wrap>
+
+                    <v-flex xs12>
+                        <h1>深蹲 - 爆發力</h1>
+                        <h2>負重<span style="font-size: 3rem;">{{ load }}</span>公斤</h2>
+                    </v-flex>
+                    <v-flex xs6>
+                        <span class="g-word">組數</span>
+                        <v-progress-circular
+                        :rotate="180"
+                        :size="100"
+                        :width="15"
+                        :value="cCurrentSet"
+                        color="teal"
+                        >
+                        {{ currentSet }}/{{ totalSet }}
+                        </v-progress-circular>
+                    </v-flex>
+                    <v-flex xs6>
+                        <span class="g-word">次數</span>
+                        <v-progress-circular
+                        :rotate="180"
+                        :size="150"
+                        :width="15"
+                        :value="cCurrentRep"
+                        color="primary"
+                        >
+                        {{ currentRep }}/{{ totalRep }}
+                        </v-progress-circular>
+                    </v-flex>
+        </v-layout>
+                        </v-container>
+
+                </v-card>
             </v-flex>
             <v-flex xs12>
-                <ve-line :data="chartData" height="37vh" :settings="chartSettings"></ve-line>
+                <v-card>
+                    <ve-line :data="chartData" height="35vh" :settings="chartSettings"></ve-line>
+                </v-card>
             </v-flex>
             <v-flex xs12>
                 <v-btn color="success">繼續</v-btn>

@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Start from './views/Start.vue';
+import Purpose from './views/Purpose.vue';
 
 Vue.use(Router);
 
@@ -27,7 +28,15 @@ export default new Router({
       name: 'Start',
       component: Start,
       meta:{
-        title:'開始運動'
+        title:'開始健身'
+      }
+    },
+    {
+      path: '/purpose',
+      name: 'Purpose',
+      component: Purpose,
+      meta:{
+        title:'健身目標'
       }
     },
   ],

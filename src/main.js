@@ -8,12 +8,16 @@ import './registerServiceWorker';
 import fortawesome from '@fortawesome/fontawesome';
 import faFreeSolid from '@fortawesome/fontawesome-free-solid';
 // import VCharts from 'v-charts'
-import VeLine from 'v-charts/lib/line.common'
+import VeLine from 'v-charts/lib/line.common';
+// import VuePickers from "vue-pickers";
+import VueScrollPicker from 'vue-scroll-picker';
 
 fortawesome.library.add(faFreeSolid);
 
 // Vue.use(VCharts);
-Vue.component(VeLine.name, VeLine);
+// Vue.use(VuePickers);
+Vue.use(VueScrollPicker);
+Vue.component(VeLine.name, VeLine)
 
 Vue.config.productionTip = false;
 
