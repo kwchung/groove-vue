@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Start from './views/Start.vue';
 import Purpose from './views/Purpose.vue';
+import Action from './views/Action.vue';
 
 Vue.use(Router);
 
@@ -37,6 +38,14 @@ export default new Router({
       component: Purpose,
       meta:{
         title:'健身目標'
+      }
+    },
+    {
+      path: '/action',
+      name: 'Action',
+      component: Action,
+      meta:{
+        title:'選擇運動'
       }
     },
   ],
