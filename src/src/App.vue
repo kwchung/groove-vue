@@ -1,9 +1,7 @@
 <template>
   <v-app>
     <!-- toll bar -->
-    <v-toolbar
-      app
-    >
+    <v-toolbar app>
       <v-btn icon v-show="$route.meta.back" @click="$router.back()">
         <v-icon>fas fa-arrow-left</v-icon>
       </v-btn>
@@ -12,7 +10,7 @@
     </v-toolbar>
 
     <!-- content -->
-    <v-content>
+    <v-content style="margin-bottom: 56px;">
       <router-view/>
     </v-content>
 
@@ -20,14 +18,14 @@
     <v-bottom-nav
       :active.sync="bottomNav"
       :value="true"
-      absolute
-      color="transparent"
+      color="white"
       fixed
     >
       <v-btn
         color="teal"
         flat
         value="recent"
+        dark
       >
         <span>歷史紀錄</span>
         <v-icon>fas fa-history</v-icon>

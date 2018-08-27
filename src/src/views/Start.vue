@@ -26,7 +26,7 @@
                         <span class="g-word">次數</span>
                         <v-progress-circular
                         :rotate="180"
-                        :size="150"
+                        :size="140"
                         :width="15"
                         :value="cCurrentRep"
                         color="primary"
