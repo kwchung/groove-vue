@@ -4,8 +4,10 @@
     <v-toolbar
       app
     >
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title 
+      <v-btn icon v-show="$route.meta.back" @click="$router.back()">
+        <v-icon>fas fa-arrow-left</v-icon>
+      </v-btn>
+      <v-toolbar-title
       v-text="$route.meta.title"></v-toolbar-title>
     </v-toolbar>
 
@@ -34,6 +36,7 @@
         color="teal"
         flat
         value="favorites"
+        @click="$router.push('/action')"
       >
         <span>開始健身</span>
         <v-icon>fas fa-dumbbell</v-icon>
@@ -61,3 +64,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+body{
+  font-family: 'Microsoft JhengHei' !important;
+}
+</style>

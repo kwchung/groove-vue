@@ -2,24 +2,16 @@
     <v-container grid-list-md text-xs-center>
         <v-layout row wrap align-start justify-center>
             <v-flex xs6>
-                <v-card class="blue darken-4 white--text" height="150">
-                    <h1>肌肥大</h1>
-                </v-card>
+                <v-btn class="blue darken-4 white--text" large>肌肥大</v-btn>
             </v-flex>
             <v-flex xs6>
-                <v-card class="blue darken-2 white--text" height="150">
-                    <h1>肌耐力</h1>
-                </v-card>
+                <v-btn class="blue darken-2 white--text" large>肌耐力</v-btn>
             </v-flex>
             <v-flex xs6>
-                <v-card class="blue darken-1 white--text" height="150">
-                    <h1>肌力</h1>
-                </v-card>
+                <v-btn class="blue darken-1 white--text" large>肌力</v-btn>
             </v-flex>
             <v-flex xs6>
-                <v-card class="blue lighten-3 white--text" height="150">
-                    <h1>爆發力</h1>
-                </v-card>
+                <v-btn class="blue lighten-3 white--text" large>爆發力</v-btn>
             </v-flex>
             <v-flex xs12>
                 <v-layout row>
@@ -39,7 +31,7 @@
                 <v-layout row>
                     <v-flex xs4>
                         <h3 class="mb-2">組數</h3>
-                        <scroll-picker :options="set" placeholder="12345678" />
+                        <scroll-picker :options="set" />
                     </v-flex>
                     <v-flex xs4>
                         <h3 class="mb-2">次數</h3>
@@ -52,7 +44,7 @@
                 </v-layout>
             </v-flex>
             <v-flex xs12>
-                <v-btn color="success">開始</v-btn>
+                <v-btn color="success" @click="$router.push('/start')">開始</v-btn>
             </v-flex>
         </v-layout>
     </v-container>
@@ -62,8 +54,6 @@
 export default {
   data() {
     return {
-      toggle_exclusive: 2,
-      items: [],
       rm: 70,
       set:[
         { value: 1, name: "1" },
@@ -131,7 +121,8 @@ export default {
 .vue-scroll-picker-item.-selected {
   color: #007bff;
 }
-.blue.white--text{
-     padding-top: 3.5rem;
+.blue.white--text.v-btn.v-btn--large{
+    height: 10rem;
+    width: 100%;
 }
 </style>
