@@ -5,6 +5,7 @@ import Start from './views/Start.vue';
 import Purpose from './views/Purpose.vue';
 import Action from './views/Action.vue';
 import Intensity from './views/Intensity.vue';
+import Profile from './views/Profile.vue';
 
 Vue.use(Router);
 
@@ -60,6 +61,15 @@ export default new Router({
       meta: {
         title: '測試最大肌力',
         back: true,
+      },
+    },
+    {
+      path: '/profile',
+      name: 'Profile',
+      component: Profile,
+      meta: {
+        title: '個人資料',
+        back: false,
       },
     },
   ],

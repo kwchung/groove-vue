@@ -1,5 +1,5 @@
 <template>
-    <v-caontainer>
+    <v-container>
         <v-layout>
             <v-flex>
                 <h1>測試最大肌力</h1>
@@ -9,7 +9,7 @@
                 >選擇健身目標</v-btn>
             </v-flex>
         </v-layout>
-    </v-caontainer>
+    </v-container>
 </template>
 
 <script>

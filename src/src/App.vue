@@ -43,6 +43,7 @@
         color="teal"
         flat
         value="nearby"
+        @click="$router.push('/profile')"
       >
         <span>個人資料</span>
         <v-icon>fas fa-user</v-icon>

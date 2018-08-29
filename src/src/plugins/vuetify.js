@@ -1,42 +1,50 @@
-import Vue from 'vue'
+import Vue from 'vue';
 import {
-  Vuetify,
   VApp,
-  VNavigationDrawer,
-  VProgressCircular,
   VBottomNav,
-  VTextField,
-  VInput,
-  VCard,
-  VFooter,
-  VSubheader,
-  VList,
   VBtn,
   VBtnToggle,
-  VIcon,
+  VCard,
+  VFooter,
   VGrid,
+  VIcon,
+  VInput,
+  VList,
+  VNavigationDrawer,
+  VProgressCircular,
+  VSubheader,
+  VTextField,
   VToolbar,
-  transitions
-} from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
+  VForm,
+  VSelect,
+  VCheckbox,
+  VSnackbar,
+  Vuetify,
+  transitions,
+} from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
 
 Vue.use(Vuetify, {
   components: {
     VApp,
-    VNavigationDrawer,
-    VProgressCircular,
     VBottomNav,
-    VTextField,
-    VInput,
-    VCard,
-    VFooter,
-  VSubheader,
-    VList,
     VBtn,
     VBtnToggle,
-    VIcon,
+    VCard,
+    VFooter,
     VGrid,
+    VIcon,
+    VInput,
+    VList,
+    VNavigationDrawer,
+    VProgressCircular,
+    VSubheader,
+    VTextField,
+    VForm,
+    VSelect,
+    VCheckbox,
+    VSnackbar,
     VToolbar,
-    transitions
+    transitions,
   },
-})
+});
