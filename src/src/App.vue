@@ -26,6 +26,7 @@
         flat
         value="recent"
         dark
+        @click="$router.push('/history')"
       >
         <span>歷史紀錄</span>
         <v-icon>fas fa-history</v-icon>

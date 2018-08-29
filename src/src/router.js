@@ -6,6 +6,9 @@ import Purpose from './views/Purpose.vue';
 import Action from './views/Action.vue';
 import Intensity from './views/Intensity.vue';
 import Profile from './views/Profile.vue';
+import History from './views/History.vue';
+import HistoryList from './views/HistoryList.vue';
+import HistoryDetail from './views/HistoryDetail.vue';
 
 Vue.use(Router);
 
@@ -70,6 +73,33 @@ export default new Router({
       meta: {
         title: '個人資料',
         back: false,
+      },
+    },
+    {
+      path: '/history',
+      name: 'History',
+      component: History,
+      meta: {
+        title: '歷史紀錄',
+        back: false,
+      },
+    },
+    {
+      path: '/history-list/:date',
+      name: 'HistoryList',
+      component: HistoryList,
+      meta: {
+        title: '歷史紀錄',
+        back: true,
+      },
+    },
+    {
+      path: '/history-detail/:id',
+      name: 'HistoryDetail',
+      component: HistoryDetail,
+      meta: {
+        title: '歷史紀錄',
+        back: true,
       },
     },
   ],

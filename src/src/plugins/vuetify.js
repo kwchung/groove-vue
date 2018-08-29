@@ -19,6 +19,8 @@ import {
   VSelect,
   VCheckbox,
   VSnackbar,
+  VDatePicker,
+  VDivider,
   Vuetify,
   transitions,
 } from 'vuetify';
@@ -44,6 +46,8 @@ Vue.use(Vuetify, {
     VSelect,
     VCheckbox,
     VSnackbar,
+    VDatePicker,
+    VDivider,
     VToolbar,
     transitions,
   },
