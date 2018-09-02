@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/groove-vue/dist/js/chunk-vendors.5d1d073d.js"
   },
   {
-    "revision": "543d010f779efd6e4092",
-    "url": "/groove-vue/dist/js/app.7e06fd01.js"
+    "revision": "fd50964860592269ac47",
+    "url": "/groove-vue/dist/js/app.af96abcc.js"
   },
   {
     "revision": "fceeb5487e86cd29ba36",
     "url": "/groove-vue/dist/js/about.5f7d6f63.js"
   },
   {
-    "revision": "f59df2cb2846ea353c7cd309da237055",
+    "revision": "4ccb678cd080428a970395a38cbc2c0d",
     "url": "/groove-vue/dist/index.html"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/groove-vue/dist/css/chunk-vendors.8f273ef5.css"
   },
   {
-    "revision": "543d010f779efd6e4092",
+    "revision": "fd50964860592269ac47",
     "url": "/groove-vue/dist/css/app.15dbf636.css"
   }
 ];
