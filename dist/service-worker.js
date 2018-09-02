@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
 
 importScripts(
-  "/groove-vue/dist/precache-manifest.1d5375a233503192b39a5f1ba6ab911a.js"
+  "/groove-vue/dist/precache-manifest.ebf81eb6ef00409199ba6efa1caed0ab.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "groove"});
